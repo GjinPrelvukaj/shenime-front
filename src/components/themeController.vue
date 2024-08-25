@@ -9,14 +9,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <label
-    class="grid cursor-pointer place-items-center mr-4"
-    data-toggle-theme="cupcake,coffee"
-    data-act-class="ACTIVECLASS"
-  >
+  <label class="grid cursor-pointer place-items-center mr-">
     <input
       type="checkbox"
       class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
+      data-toggle-theme="cupcake,coffee"
+      data-act-class="ACTIVECLASS"
     />
     <svg
       class="stroke-base-100 fill-base-100 col-start-1 row-start-1"

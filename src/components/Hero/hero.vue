@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { MoveRight } from "lucide-vue-next";
 import { CodeXml } from "lucide-vue-next";
+import window from "@/components/Hero/window.vue";
+import { ref } from "vue";
 </script>
 <template>
   <div class="flex justify-center">
@@ -11,7 +13,7 @@ import { CodeXml } from "lucide-vue-next";
         target="_blank"
         rel="noopener noreferrer"
       >
-        Open-Source
+        This website is open-source
         <CodeXml />
       </a>
 
@@ -26,27 +28,22 @@ import { CodeXml } from "lucide-vue-next";
       </span>
 
       <div class="flex gap-4">
-        <a class="btn btn-primary">
-          Get started
-          <MoveRight />
-        </a>
-
         <a
           href="https://github.com/GjinPrelvukaj/shenimet-dev"
           target="_blank"
           rel="noopener noreferrer"
         >
           <code class="btn btn-ghost border border-neutral">
-            $ git clone me :)
+            $ click me to clone :)
             <i class="fa-solid fa-copy text-lg text-secondary"></i>
           </code>
         </a>
       </div>
-
-      <a class="link link-secondary">
-        Installation guide
-        <i class="fa-solid fa-arrow-right text-sm"></i>
-      </a>
     </div>
   </div>
+  <section>
+    <div class="mt-[10%] hidden lg:block md:block">
+      <window />
+    </div>
+  </section>
 </template>
