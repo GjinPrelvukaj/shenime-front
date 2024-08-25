@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import themeChange from "@/components/themeController.vue";
+import { RouterLink } from "vue-router";
 </script>
 <template>
   <div class="navbar sticky">
@@ -25,9 +26,25 @@ import themeChange from "@/components/themeController.vue";
           tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
         >
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Downloawd</a></li>
+          <li>
+            <RouterLink to="/">Home</RouterLink>
+          </li>
+          <li>
+            <a
+              href="https://github.com/GjinPrelvukaj"
+              target="_blank"
+              rel="noopener noreferrer"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/GjinPrelvukaj/shenimet-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download</a
+            >
+          </li>
         </ul>
       </div>
 
@@ -37,9 +54,23 @@ import themeChange from "@/components/themeController.vue";
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Download</a></li>
+        <li><RouterLink to="/">Home</RouterLink></li>
+        <li>
+          <a
+            href="https://github.com/GjinPrelvukaj"
+            target="_blank"
+            rel="noopener noreferrer"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/GjinPrelvukaj/shenimet-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Download</a
+          >
+        </li>
       </ul>
     </div>
     <div class="navbar-end">
